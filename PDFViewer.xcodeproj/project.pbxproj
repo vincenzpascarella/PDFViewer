@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		7BA85618299B96DB0088AB50 /* PDFViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA85617299B96DB0088AB50 /* PDFViewerApp.swift */; };
-		7BA8561A299B96DB0088AB50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA85619299B96DB0088AB50 /* ContentView.swift */; };
-		7BA8561C299B96DC0088AB50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA8561B299B96DC0088AB50 /* Assets.xcassets */; };
-		7BA85620299B96DC0088AB50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA8561F299B96DC0088AB50 /* Preview Assets.xcassets */; };
+		7BA8561A299B96DB0088AB50 /* OpenPDFTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA85619299B96DB0088AB50 /* OpenPDFTestView.swift */; };
+		7BA85629299B97BD0088AB50 /* PDFReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA85628299B97BD0088AB50 /* PDFReader.swift */; };
+		7BAA4A23299BA6CF00960F3E /* PDFBook.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7BAA4A22299BA6CF00960F3E /* PDFBook.pdf */; };
+		7BCD0E5A29A52BDB00B6993F /* Asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BCD0E5929A52BDB00B6993F /* Asset.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B5A36C529A392B2006F49AA /* PDFViewerDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PDFViewerDebug.entitlements; sourceTree = "<group>"; };
 		7BA85614299B96DB0088AB50 /* PDFViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BA85617299B96DB0088AB50 /* PDFViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewerApp.swift; sourceTree = "<group>"; };
-		7BA85619299B96DB0088AB50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7BA8561B299B96DC0088AB50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7BA8561D299B96DC0088AB50 /* PDFViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PDFViewer.entitlements; sourceTree = "<group>"; };
-		7BA8561F299B96DC0088AB50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7BA85619299B96DB0088AB50 /* OpenPDFTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenPDFTestView.swift; sourceTree = "<group>"; };
+		7BA85628299B97BD0088AB50 /* PDFReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFReader.swift; sourceTree = "<group>"; };
+		7BAA4A22299BA6CF00960F3E /* PDFBook.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = PDFBook.pdf; sourceTree = "<group>"; };
+		7BCD0E5929A52BDB00B6993F /* Asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Asset.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +54,12 @@
 		7BA85616299B96DB0088AB50 /* PDFViewer */ = {
 			isa = PBXGroup;
 			children = (
+				7B5A36C529A392B2006F49AA /* PDFViewerDebug.entitlements */,
 				7BA85617299B96DB0088AB50 /* PDFViewerApp.swift */,
-				7BA85619299B96DB0088AB50 /* ContentView.swift */,
-				7BA8561B299B96DC0088AB50 /* Assets.xcassets */,
-				7BA8561D299B96DC0088AB50 /* PDFViewer.entitlements */,
+				7BA85619299B96DB0088AB50 /* OpenPDFTestView.swift */,
+				7BA85628299B97BD0088AB50 /* PDFReader.swift */,
+				7BAA4A22299BA6CF00960F3E /* PDFBook.pdf */,
+				7BCD0E5929A52BDB00B6993F /* Asset.xcassets */,
 				7BA8561E299B96DC0088AB50 /* Preview Content */,
 			);
 			path = PDFViewer;
@@ -64,7 +68,6 @@
 		7BA8561E299B96DC0088AB50 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				7BA8561F299B96DC0088AB50 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -127,8 +130,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BA85620299B96DC0088AB50 /* Preview Assets.xcassets in Resources */,
-				7BA8561C299B96DC0088AB50 /* Assets.xcassets in Resources */,
+				7BCD0E5A29A52BDB00B6993F /* Asset.xcassets in Resources */,
+				7BAA4A23299BA6CF00960F3E /* PDFBook.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BA8561A299B96DB0088AB50 /* ContentView.swift in Sources */,
+				7BA8561A299B96DB0088AB50 /* OpenPDFTestView.swift in Sources */,
+				7BA85629299B97BD0088AB50 /* PDFReader.swift in Sources */,
 				7BA85618299B96DB0088AB50 /* PDFViewerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,7 +265,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = PDFViewer/PDFViewer.entitlements;
+				CODE_SIGN_ENTITLEMENTS = PDFViewer/PDFViewerDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PDFViewer/Preview Content\"";
@@ -299,7 +303,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = PDFViewer/PDFViewer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PDFViewer/Preview Content\"";
