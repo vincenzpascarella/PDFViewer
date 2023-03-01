@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B8AFBEC29AF53A800A7B805 /* PDFReaderButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8AFBEB29AF53A800A7B805 /* PDFReaderButtons.swift */; };
+		7B8AFBEE29AF545600A7B805 /* PDFReaderNativePDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8AFBED29AF545600A7B805 /* PDFReaderNativePDFView.swift */; };
+		7B8AFBF029AF54A300A7B805 /* PDFReaderAppearanceSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8AFBEF29AF54A300A7B805 /* PDFReaderAppearanceSetup.swift */; };
+		7B8AFBF229AF54F900A7B805 /* PDFReaderPDFFileDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8AFBF129AF54F900A7B805 /* PDFReaderPDFFileDocument.swift */; };
 		7BA85618299B96DB0088AB50 /* PDFViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA85617299B96DB0088AB50 /* PDFViewerApp.swift */; };
 		7BA8561A299B96DB0088AB50 /* OpenPDFTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA85619299B96DB0088AB50 /* OpenPDFTestView.swift */; };
 		7BA85629299B97BD0088AB50 /* PDFReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA85628299B97BD0088AB50 /* PDFReader.swift */; };
@@ -16,6 +20,10 @@
 
 /* Begin PBXFileReference section */
 		7B5A36C529A392B2006F49AA /* PDFViewerDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PDFViewerDebug.entitlements; sourceTree = "<group>"; };
+		7B8AFBEB29AF53A800A7B805 /* PDFReaderButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFReaderButtons.swift; sourceTree = "<group>"; };
+		7B8AFBED29AF545600A7B805 /* PDFReaderNativePDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFReaderNativePDFView.swift; sourceTree = "<group>"; };
+		7B8AFBEF29AF54A300A7B805 /* PDFReaderAppearanceSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFReaderAppearanceSetup.swift; sourceTree = "<group>"; };
+		7B8AFBF129AF54F900A7B805 /* PDFReaderPDFFileDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFReaderPDFFileDocument.swift; sourceTree = "<group>"; };
 		7BA85614299B96DB0088AB50 /* PDFViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BA85617299B96DB0088AB50 /* PDFViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewerApp.swift; sourceTree = "<group>"; };
 		7BA85619299B96DB0088AB50 /* OpenPDFTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenPDFTestView.swift; sourceTree = "<group>"; };
@@ -35,6 +43,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B8AFBF329AF5D8100A7B805 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7B8AFBF129AF54F900A7B805 /* PDFReaderPDFFileDocument.swift */,
+				7B8AFBEF29AF54A300A7B805 /* PDFReaderAppearanceSetup.swift */,
+				7B8AFBED29AF545600A7B805 /* PDFReaderNativePDFView.swift */,
+				7B8AFBEB29AF53A800A7B805 /* PDFReaderButtons.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		7BA8560B299B96DB0088AB50 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +77,7 @@
 				7BA85617299B96DB0088AB50 /* PDFViewerApp.swift */,
 				7BA85619299B96DB0088AB50 /* OpenPDFTestView.swift */,
 				7BA85628299B97BD0088AB50 /* PDFReader.swift */,
+				7B8AFBF329AF5D8100A7B805 /* Components */,
 				7BAA4A22299BA6CF00960F3E /* PDFBook.pdf */,
 				7BCD0E5929A52BDB00B6993F /* Asset.xcassets */,
 				7BA8561E299B96DC0088AB50 /* Preview Content */,
@@ -142,9 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B8AFBEE29AF545600A7B805 /* PDFReaderNativePDFView.swift in Sources */,
 				7BA8561A299B96DB0088AB50 /* OpenPDFTestView.swift in Sources */,
+				7B8AFBEC29AF53A800A7B805 /* PDFReaderButtons.swift in Sources */,
 				7BA85629299B97BD0088AB50 /* PDFReader.swift in Sources */,
+				7B8AFBF229AF54F900A7B805 /* PDFReaderPDFFileDocument.swift in Sources */,
 				7BA85618299B96DB0088AB50 /* PDFViewerApp.swift in Sources */,
+				7B8AFBF029AF54A300A7B805 /* PDFReaderAppearanceSetup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
