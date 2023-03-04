@@ -27,4 +27,13 @@ It allows users to open, read, save, share, and print PDF documents.
 2. Tap the "Magnifying glass" in the bottom toolbar to search for text within the document.
 3. Tap the "Share" button, in the bottom toolbar or in the top menu, to share the PDF document via email, message, or other compatible apps.
 4. Tap the "Save to Files" button in the top menu to save the PDF document.
-5. Tap the "Print" button in the top menu to print the PDF document using AirPrint
+5. Tap the "Print" button in the top menu to print the PDF document using AirPrint.
+
+## Contributions
+Contributions to the project are welcome. To contribute, simply fork the project and submit a pull request with your changes.
+
+## Credits
+The PDFViewer project with the PDFReader reusable View was created by me, Vincenzo Pascarella. If you have any questions or feedback, please contact me on [LinkedIn](https://www.linkedin.com/in/vincenzpascarella/).
+
+## License
+The PDFViewer is licensed under the MIT License. See the LICENSE file for more information.
