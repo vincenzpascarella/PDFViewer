@@ -1,9 +1,9 @@
 # PDFViewer
 
-The PDFViewer is a simple iOS app that includes a pdf file used as example for the PDFReader, a SwiftUI View that can be used in any iOS app.
+The PDFViewer is a simple iOS app that includes a pdf file used as an example for the PDFReader, a SwiftUI View that can be used in any iOS app.
 
 The PDFReader takes advantage of the native iOS PDFKit library for rendering PDF documents.
-It allows users to open, read, save, share and print PDF documents.
+It allows users to open, read, save, share, and print PDF documents.
 
 ## Features
 - Open and read PDF documents.
@@ -11,15 +11,15 @@ It allows users to open, read, save, share and print PDF documents.
 - Search for text within a PDF document.
 - Share PDF documents via email, message, or other compatible apps.
 - Save PDF documents using the Files browser.
-- Print PDF documents using AirPrint
+- Print PDF documents using AirPrint.
 
 ## Requirements
 - iOS 16.0+
 
 ## How to use it in personal projects
-1. Clone the repository and open it in Xcode
-2. Add to your project the PDFReader.swift file and the others in the "Components" directory
-3. Use the PDFReader View in your app passing it the url of your pdf or a Data variable that contains it.
+1. Clone the repository and open it in Xcode.
+2. Add to your project the PDFReader.swift file and the others in the "Components" directory.
+3. Use the PDFReader View in your app passing it the URL of your pdf or a Data variable that contains it.
 4. You can add the .fullScreenCover modifier to call it like in the Native iOS apps.
 
 ## In app usage
