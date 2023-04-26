@@ -31,6 +31,7 @@ extension PDFReader{
                     .foregroundColor(.primary)
                     .font(.body)
                     .fontWeight(.semibold)
+                    .frame(maxWidth: UIScreen.main.bounds.size.width * 2.8 / 4)
                 
                 Image(systemName: "chevron.down.circle.fill").symbolRenderingMode(.hierarchical)
                     .foregroundStyle(Color.secondary)
