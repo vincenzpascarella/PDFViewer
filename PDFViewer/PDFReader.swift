@@ -25,6 +25,9 @@ struct PDFReader: View{
     /// A Boolean value indicating whether to display the PDF document as a single page.
     let singlePage: Bool
     
+    /// A Boolean value indicating whether to set default appearance for tab bar and navigation bar
+    let setupDefaultAppearance: Bool
+    
     /// A state variable that indicates whether to show the find navigator.
     @State private var showFindNavigator = false
     
@@ -44,11 +47,12 @@ struct PDFReader: View{
     ///    - singlePage: A Boolean value indicating whether to display the PDF document as a single page. Defaults to `false`.
     ///
     /// - Note: The PDF document is loaded from the given URL and converted to `Data`. If an error occurs during this process, the app will crash.
-    init(_ url: URL, singlePage: Bool = false) {
+    init(_ url: URL, setupDefaultAppearance: Bool = false, singlePage: Bool = false) {
         self.url = url
         self.data = try! Data(contentsOf: url)
         self.title = PDFDocument(data: data)?.documentAttributes?[PDFDocumentAttribute.titleAttribute] as? String ?? url.deletingPathExtension().lastPathComponent
         self.singlePage = singlePage
+        self.setupDefaultAppearance = setupDefaultAppearance
     }
     
     /// Initializes and returns a new `PDFReader` instance with the specified PDF data and single page display setting.
@@ -56,11 +60,12 @@ struct PDFReader: View{
     /// - Parameters:
     ///    - data: The data of the PDF document to display.
     ///    - singlePage: A Boolean value indicating whether to display the PDF document as a single page.
-    init(_ data: Data, singlePage: Bool = false) {
+    init(_ data: Data, setupDefaultAppearance: Bool = false, singlePage: Bool = false) {
         self.url = URL(dataRepresentation: data, relativeTo: nil)!
         self.data = data
         self.title = PDFDocument(data: data)?.documentAttributes?[PDFDocumentAttribute.titleAttribute] as? String ?? url.deletingPathExtension().lastPathComponent
         self.singlePage = singlePage
+        self.setupDefaultAppearance = setupDefaultAppearance
     }
     
     var body: some View{
@@ -121,8 +126,10 @@ struct PDFReader: View{
             }
         }//NavigationStack
         .onAppear {
-            setupNavigationBarAppearance()
-            setupTabBarAppearance()
+            if setupDefaultAppearance{
+                setupNavigationBarAppearance()
+                setupTabBarAppearance()
+            }
         }//onAppear
         .fileExporter(isPresented: $showingExporter, document: PDFFile(data: data), contentType: .pdf, defaultFilename: title + ".pdf") { result in
             switch result {
